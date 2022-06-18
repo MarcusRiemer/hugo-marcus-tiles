@@ -1,0 +1,5 @@
+<div class="tiles">
+  {{ range (where .Site.Pages "Section" "tiles") }}
+  <div class="{{ delimit (.Params.css_classes | default slice) " " }}">{{ .Content }}</div>
+  {{ end }}
+</div>

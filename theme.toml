@@ -1,0 +1,12 @@
+name = "Marcus Tiles"
+license = "AGPL"
+licenselink = "https://github.com/MarcusRiemer/hugo-marcus-tiles/blob/master/LICENSE"
+description = "Very simple layout that allows tiles based on a section"
+homepage = "http://marcusriemer.de/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Marcus Riemer"
+  homepage = "http://marcusriemer.de"

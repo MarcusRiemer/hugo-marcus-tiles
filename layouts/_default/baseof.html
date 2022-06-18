@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {{- block "title" . -}}
+      {{ .Site.Title }}
+      {{- end -}}
+    </title>
+    <link rel="stylesheet" type="text/css" href="/css/marcus-two-column.css">
+    {{- range .Site.Params.css }}
+    <link rel="stylesheet" type="text/css" href='/css/{{ . }}'>
+    {{- end }}
+  </head>
+  <body>
+    <h1>{{ .Site.Title }}</h1>
+    <main>
+      {{- block "main" . }}{{- end }}
+    </main>
+  </body>
+</html>

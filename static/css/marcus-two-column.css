@@ -1,0 +1,27 @@
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tiles .centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+    .tiles > * {
+        width: calc(50% - 2px);
+    }
+
+    .tiles {
+        //gap: 2px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tiles {
+        flex-direction: column;
+    }
+}
