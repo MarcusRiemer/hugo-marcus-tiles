@@ -8,7 +8,8 @@
       {{ .Site.Title }}
       {{- end -}}
     </title>
-    <link rel="stylesheet" type="text/css" href="/css/marcus-two-column.css">
+    {{ $sass := resources.Get "css/marcus-two-column.scss" | resources.ToCSS }}
+    <link rel="stylesheet" type="text/css" href="{{ $sass.RelPermalink }}">
     {{- range .Site.Params.css }}
     <link rel="stylesheet" type="text/css" href='/css/{{ . }}'>
     {{- end }}
