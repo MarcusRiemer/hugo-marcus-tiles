@@ -1,3 +1,18 @@
+@import "materialize-src/sass/components/color-variables";
+@import "materialize-src/sass/components/color-classes";
+
+@import "materialize-src/sass/components/variables";
+
+@import "materialize-src/sass/components/normalize";
+
+@import "materialize-src/sass/components/global";
+@import "materialize-src/sass/components/cards";
+
+body {
+    @extend .blue, .lighten-4;
+    margin: 5px;
+}
+
 .tiles {
     display: flex;
     flex-wrap: wrap;
@@ -12,11 +27,11 @@
 
 @media screen and (min-width: 800px) {
     .tiles > * {
-        width: calc(50% - 2px);
+        width: calc(50% - 5px);
     }
 
     .tiles {
-        //gap: 2px;
+        gap: 5px;
     }
 }
 
